@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="contactstyle.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  </head>
+  <body>
+<div class="contact-section">
+
+  <h1>Contact Us</h1>
+  <div class="border"></div>
+  <form class="contact-form" action="contactus.html" method="post">
+    <input type="text" class="contact-form-text" placeholder="Enter Your Name">
+    <input type="email" class="contact-form-text" placeholder="Enter Your Email">
+    <input type="text" class="contact-form-text" placeholder="Enter Your Phone">
+    <textarea class="contact-form-text" placeholder="Enter Your Message"></textarea>
+    <input type="submit" class="contact-form-btn" onclick="pop() " value="Send">
+  </form>
+  <script>
+    function pop() {
+        swal({
+            title: "Your table is booked",
+            text: "You clicked the button!",
+            icon: "success",
+            button: "Ok",
+        });
+    }
+</script>
+</div>
+
+  </body>
+</html>
