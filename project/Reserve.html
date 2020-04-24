@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Reserve Table</title>
+    <link rel="stylesheet" href="reservestyle.css" />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body>
+    <section class="section-book">
+        <div class="book">
+            <div class="book__form">
+                <form action="#" class="form">
+                    <h2 class="heading">
+                        Book Your Table
+                    </h2>
+                    <div class="form__group">
+                        <input type="text" class="form__input" placeholder="Registered name" id="name" required />
+                        <label for="name" class="form__label">Registered name</label>
+                    </div>
+
+                    <div class="form__group">
+                        <input type="email" class="form__input" placeholder="Registered Email address" id="email"
+                            required />
+                        <label for="email" class="form__label">Email address</label>
+                    </div>
+                    <div class="form__group">
+                        <input type="Number" class="form__guest" placeholder="Number of Guest" id="email" required />
+                        <label for="email" class="form__label"></label>
+                    </div>
+
+                    <div class="form__group">
+                        <button class="btn " onclick="popup()">Confirm &rarr;</button>
+                        <script>
+                            function popup() {
+                                swal({
+                                    title: "Your table is booked",
+                                    text: "You clicked the button!",
+                                    icon: "success",
+                                    button: "Ok",
+                                });
+                            }
+                        </script>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
