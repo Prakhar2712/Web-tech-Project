@@ -1,2 +1,2 @@
 # Web-tech-Project
-An online restaurant side 
+An online restaurant site 
